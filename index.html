@@ -1,435 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Setembro Magro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      overflow-x: hidden;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setembro Magro</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #000;
+            overflow-x: hidden;
+        }
 
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-family: 'Orbitron', sans-serif;
-    }
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Orbitron", sans-serif;
+        }
 
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
 
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 </head>
 
 <body class="text-green-400 overflow-x-hidden">
-  <!-- Cabeçalho da cabeççççççççççç -->
-  <header class="absolute top-0 left-0 w-full z-20">
-    <div class="max-w-7xl mx-auto px-4 h-28 flex justify-between items-center">
-      <img src="./img/03.png" alt="Logo" class="h-full max-h-full object-contain" />
-      <nav class="space-x-6 hidden md:flex text-white">
-        <a href="#home" class="hover:text-green-300 transition">Home</a>
-        <a href="#services" class="hover:text-green-300 transition">Benefícios</a>
-        <a href="#sobre" class="hover:text-green-300 transition">Sobre</a>
-        <a href="#team" class="hover:text-green-300 transition">Time</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Videoooooozadaaaaa -->
-  <section id="home" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
-    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-      <source src="./img/video.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeos HTML5.
-    </video>
-    <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-10"></div>
-    <div class="relative z-20 px-6 text-white">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4">SETEMBRO MAGRO</h1>
-      <p class="text-lg mb-6 max-w-2xl">O Retorno</p>
-      <a href="#assinatura" class="bg-emerald-400 hover:bg-emerald-500 text-black px-6 py-3 rounded-full font-semibold transition">
-        Saiba mais
-      </a>
-    </div>
-  </section>
-
-  <!-- Benefícios -->
-  <section id="services" class="py-2 max-w-6xl mx-auto px-4 overflow-x-hidden">
-    <h2 class="text-3xl font-bold text-center text-white">Benefícios</h2>
-    <div class="relative">
-      <button onclick="scrollCarousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2">
-        ◀
-      </button>
-      <div id="benefits-carousel" class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar px-2 md:px-10 py-2">
-
-      <!-- Card 1 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Premio Principal</h3>
-        <p class="text-white text-sm">O primeiro colocado será premiado com R$1.000,00.</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Consultoria com o Coach</h3>
-        <p class="text-white text-sm">O segundo colocado ganha 1 mês de consultoria.</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Consulta Nutricional</h3>
-        <p class="text-white text-sm">Acompanhamento exclusivo com nutricionista.</p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Medalha de Participação</h3>
-        <p class="text-white text-sm">Todos os participantes recebem uma lembrança especial.</p>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Troféus Exclusivos</h3>
-        <p class="text-white text-sm">Premiação física para os 3 primeiros colocados.</p>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Bilhetes premiados</h3>
-        <p class="text-white text-sm">serão 5 chances de ganhar, cada bilhete tem o valor de R$100,00.</p>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Curso</h3>
-        <p class="text-white text-sm">Acesso vitalício ao curso pela hotmart.</p>
-      </div>
-
-      <!-- Card 9 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Avaliação</h3>
-        <p class="text-white text-sm">Os participantes serão avaliados antes e depois do desafio.</p>
-      </div>
-
-      <!-- Card 10 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Suporte</h3>
-        <p class="text-white text-sm">Grupo no WhatsApp para acompanhamento e tira duvidas.</p>
-      </div>
-
-      <!-- Card 11 -->
-      <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-white mb-2">Confinamento no Sítio</h3>
-        <p class="text-white text-sm">Dois dias de imersão com treinos, alimentação e desafios.</p>
-      </div>
-
-    </div>
-
-    <button onclick="scrollCarousel(1)"
-      class="absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2">
-      ▶
-    </button>
-  </div>
-</section>
-
-</div>
-      <button onclick="scrollCarousel(1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2">
-        ▶
-      </button>
-    </div>
-  </section>
-
-  <script>
-    function scrollCarousel(direction) {
-      const carousel = document.getElementById('benefits-carousel');
-      const scrollAmount = 300;
-      carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-    }
-  </script>
-
-
-<section id="portfolio" class="bg-black py-4 px-4 text-white">
-  <div class="max-w-6xl mx-auto">
-
-    <!-- Premiação -->
-    <section class="py-20 max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-white">
-        Podio de prêmios - Desafio Setembro Magro
-      </h2>
-
-      <!-- Descrição do trem -->
-      <p class="text-center text-gray-300 max-w-2xl mx-auto mb-10">
-        <strong>Apenas os melhores e mais dedicados chegam até aqui</strong>! Não é apenas um desafio, é algo
-        que vai elevar o seu potencial e te testar ao máximo.
-        Após a pesagem inicial e final, vamos consagrar os vencedores do 1º, 2º e 3º lugar!
-        E tem mais: teremos uma ação especial com até R$500,00 em prêmios!
-      </p>
-
-      <!-- Pódio do podio-->
-      <div class="grid md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
-
-        <!-- 2º Lugar -->
-        <div class="bg-gray-900 rounded-xl shadow-md hover:shadow-lg overflow-hidden border-t-4 border-gray-400">
-          <img src="./img/01.jpeg" alt="2º Lugar" class="h-96 w-full object-cover" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-white mb-2">2º Lugar</h3>
-            <p class="text-gray-300 text-sm">
-              <strong>1 Mês de consultoria com o Coach Dyordan.</strong>
-            </p>
-          </div>
+    <header class="absolute top-0 left-0 w-full z-20">
+        <div class="max-w-7xl mx-auto px-4 h-28 flex justify-between items-center">
+            <img src="./img/03.png" alt="Logo" class="h-full max-h-full object-contain" />
+            <nav class="space-x-6 hidden md:flex text-white">
+                <a href="#home" class="hover:text-green-300 transition">Home</a>
+                <a href="#services" class="hover:text-green-300 transition">Benefícios</a>
+                <a href="#sobre" class="hover:text-green-300 transition">Sobre</a>
+                <a href="#team" class="hover:text-green-300 transition">Time</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- 1º Lugar -->
-        <div class="bg-gray-900 rounded-xl shadow-md hover:shadow-lg overflow-hidden border-t-4 border-yellow-500">
-          <img src="./img/dinheiro.png" alt="1º Lugar" class="h-96 w-full object-cover" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-bold text-white mb-2">🏆 1º Lugar</h3>
-            <p class="text-gray-300 text-sm">
-              <strong>R$ 1.000,00 em dinheiro.</strong>
-            </p>
-          </div>
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="./img/video.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-10"></div>
+        <div class="relative z-20 px-6 text-white">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                SETEMBRO MAGRO
+            </h1>
+            <p class="text-lg mb-6 max-w-2xl">O Retorno</p>
+            <a href="#assinatura"
+                class="bg-emerald-400 hover:bg-emerald-500 text-black px-6 py-3 rounded-full font-semibold transition">
+                Saiba mais
+            </a>
         </div>
-
-        <!-- 3º Lugar -->
-        <div class="bg-gray-900 rounded-xl shadow-md hover:shadow-lg overflow-hidden border-t-4 border-orange-400">
-          <img src="./img/Marta.jpeg" alt="3º Lugar" class="h-96 w-full object-cover" />
-          <div class="p-4 text-center">
-            <h3 class="text-xl font-semibold text-white mb-2">3º Lugar</h3>
-            <p class="text-gray-300 text-sm">
-              <strong>1 Mês de consultoria com a nutricionista Marta.</strong>
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Outras Premiações -->
-      <h3 class="text-2xl font-semibold text-center text-white mb-8">Ação para todos!</h3>
-
-      <p class="text-gray-100 text-lg text-center max-w-3xl mx-auto mb-10">
-        <strong>Serão 5 ganhadores e até R$500,00 em prêmios!<br></strong>
-        Com apenas R$0,90, você garante sua participação nessa ação exclusiva e concorre a uma parte desse valor em dinheiro.
-        Pequeno investimento, grandes chances!
-      </p>
     </section>
 
-    <div class="md:flex items-center gap-8 bg-gray-800 text-white p-6 rounded-xl shadow-md max-w-6xl mx-auto my-10">
-
-
-      <div class="md:w-1/2 relative w-full">
-        <div id="carousel" class="overflow-hidden rounded-lg shadow-lg">
-          <img id="carousel-image" src="./img/foto1.jpg" alt="Foto do sítio" class="w-full h-72 object-cover transition-all duration-500">
-        </div>
-        <div class="absolute inset-0 flex justify-between items-center px-4">
-          <button onclick="prevImage()" class="bg-black/50 text-white px-2 py-1 rounded hover:bg-black">‹</button>
-          <button onclick="nextImage()" class="bg-black/50 text-white px-2 py-1 rounded hover:bg-black">›</button>
-        </div>
-      </div>
-
-
-      <div class="md:w-1/2 mt-6 md:mt-0">
-        <h3 class="text-2xl font-bold mb-3">Uma experiência que vai ficar pra sempre na memória!</h3>
-        <p class="mb-2 text-gray-200">Troféus, medalhas, camisas personalizadas... e muito mais!</p>
-        <p class="mb-2 text-gray-200">Nos dias <strong>20 e 21 de setembro</strong>, você vai viver um <strong>confinamento de 2 dias em um sítio</strong>, com:</p>
-        <ul class="list-disc list-inside mb-4 text-gray-300">
-          <li>Alimentação inclusa</li>
-          <li>Treinos intensos</li>
-          <li>Dinâmicas e brincadeiras em grupo</li>
-          <li>Momentos de diversão e superação</li>
-        </ul>
-        <p class="font-semibold text-lg text-white">
-          Uma verdadeira <span class="text-yellow-300">imersão transformadora</span> para encerrar esse desafio com chave de ouro!
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const imagesgit add . = [
-    "/img/sitio4.jpeg",
-    "/img/sitio3.jpeg",
-    "/img/sitio5.jpeg",
-    "/img/sitio2.jpeg",
-    "/img/sitio1.jpeg"
-  ];
-
-  let current = 0;
-
-  function showImage(index) {
-    const img = document.getElementById("carousel-image");
-    img.src = images[index];
-  }
-
-  function nextImage() {
-    current = (current + 1) % images.length;
-    showImage(current);
-  }
-
-  function prevImage() {
-    current = (current - 1 + images.length) % images.length;
-    showImage(current);
-  }
-
-  setInterval(nextImage, 5000);
-</script>
-
-
-            <!-- Quem Sou  ser ou não ser? -->
-            <section id="sobre" class="py-20 bg-gray-50">
-                <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-
-                    <div>
-                        <h2 class="text-4xl font-bold text-gray-800 mb-6">Quem Sou</h2>
-                        <p class="text-gray-700 text-lg leading-relaxed">
-                            Olá! Muito prazer, meu nome é <strong>Dyórdan Rafael </strong> Sou Educador físico e tenho
-                            como principal característica o prazer em ajudar pessoas a se sentirem bem tanto
-                            <strong>fisicamente</strong> quanto <strong>mentalmente.</strong><br> Trabalho com três
-                            metodologias principais na prescrição de treinos, <strong>que me ajudam a prevenir lesões,
-                                aliviar dores e potencializar os resultados</strong> de acordo com os objetivos de cada
-                            pessoa.<br>Meus principais nichos são <strong>o emagrecimento, a reabilitação e o
-                                treinamento de alto rendimento.</strong> Além disso, sou <strong>massoterapeuta e
-                                especialista em potência e pliometria.</strong><br>Tenho um enorme carinho pelo que faço
-                            e sigo constantemente investindo em conhecimento para oferecer a melhor experiência possível
-                            para você, meu cliente e aluno!
-                        </p>
-
-                    </div>
-
-                    <!-- Imagem -->
-                    <div class="flex justify-center">
-                        <img src="./img/01.jpeg" alt="Foto pessoal"
-                            class="rounded-2xl w-80 h-auto shadow-xl object-cover" />
-                    </div>
-
+    <section id="services" class="py-2 max-w-6xl mx-auto px-4 overflow-x-hidden">
+        <h2 class="text-3xl font-bold text-center text-white">
+            Benefícios
+        </h2>
+        <div class="relative">
+            <button onclick="scrollCarousel(-1)"
+                class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2">
+                ◀
+            </button>
+            <div id="benefits-carousel"
+                class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar px-2 md:px-10 py-2">
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Premio Principal
+                    </h3>
+                    <p class="text-white text-sm">
+                        O primeiro colocado será premiado com R$1.000,00.
+                    </p>
                 </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Consultoria com o Coach
+                    </h3>
+                    <p class="text-white text-sm">
+                        O segundo colocado ganha 1 mês de consultoria.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Consulta Nutricional
+                    </h3>
+                    <p class="text-white text-sm">
+                        Acompanhamento exclusivo com nutricionista.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Medalha de Participação
+                    </h3>
+                    <p class="text-white text-sm">
+                        Todos os participantes recebem uma lembrança
+                        especial.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Troféus Exclusivos
+                    </h3>
+                    <p class="text-white text-sm">
+                        Premiação física para os 3 primeiros colocados.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Bilhetes premiados
+                    </h3>
+                    <p class="text-white text-sm">
+                        serão 5 chances de ganhar, cada bilhete tem o valor
+                        de R$100,00.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Curso
+                    </h3>
+                    <p class="text-white text-sm">
+                        Acesso vitalício ao curso pela hotmart.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Avaliação
+                    </h3>
+                    <p class="text-white text-sm">
+                        Os participantes serão avaliados antes e depois do
+                        desafio.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Suporte
+                    </h3>
+                    <p class="text-white text-sm">
+                        Grupo no WhatsApp para acompanhamento e tira
+                        duvidas.
+                    </p>
+                </div>
+
+                <div class="min-w-[280px] flex-shrink-0 text-center bg-black/60 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Confinamento no Sítio
+                    </h3>
+                    <p class="text-white text-sm">
+                        Dois dias de imersão com treinos, alimentação e
+                        desafios.
+                    </p>
+                </div>
+            </div>
+            <button onclick="scrollCarousel(1)"
+                class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2">
+                ▶
+            </button>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-black py-4 px-4 text-white">
+        <div class="max-w-6xl mx-auto">
+            <section class="py-20 max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8 text-white">
+                    Podio de prêmios - Desafio Setembro Magro
+                </h2>
+
+                <p class="text-center text-gray-300 max-w-2xl mx-auto mb-10">
+                    <strong>Apenas os melhores e mais dedicados chegam até
+                        aqui</strong>! Não é apenas um desafio, é algo que vai elevar o seu
+                    potencial e te testar ao máximo. Após a pesagem inicial
+                    e final, vamos consagrar os vencedores do 1º, 2º e 3º
+                    lugar! E tem mais: teremos uma ação especial com até
+                    R$500,00 em prêmios!
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
+                    <div
+                        class="bg-gray-900 rounded-xl shadow-md hover:shadow-lg overflow-hidden border-t-4 border-gray-400">
+                        <img src="./img/01.jpeg" alt="2º Lugar" class="h-96 w-full object-cover" />
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-semibold text-white mb-2">
+                                2º Lugar
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong>1 Mês de consultoria com o Coach
+                                    Dyordan.</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl shadow-md hover:shadow-lg overflow-hidden border-t-4 border-yellow-500">
+                        <img src="./img/dinheiro.png" alt="1º Lugar" class="h-96 w-full object-cover" />
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-bold text-white mb-2">
+                                🏆 1º Lugar
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong>R$ 1.000,00 em dinheiro.</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl shadow-md hover:shadow-lg overflow-hidden border-t-4 border-orange-400">
+                        <img src="./img/Marta.jpeg" alt="3º Lugar" class="h-96 w-full object-cover" />
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-semibold text-white mb-2">
+                                3º Lugar
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong>1 Mês de consultoria com a
+                                    nutricionista Marta.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-center text-white mb-8">
+                    Ação para todos!
+                </h3>
+
+                <p class="text-gray-100 text-lg text-center max-w-3xl mx-auto mb-10">
+                    <strong>Serão 5 ganhadores e até R$500,00 em prêmios!<br /></strong>
+                    Com apenas R$0,90, você garante sua participação nessa
+                    ação exclusiva e concorre a uma parte desse valor em
+                    dinheiro. Pequeno investimento, grandes chances!
+                </p>
             </section>
 
+            <div
+                class="md:flex items-center gap-8 bg-gray-800 text-white p-6 rounded-xl shadow-md max-w-6xl mx-auto my-10">
+                <div class="md:w-1/2 relative w-full">
+                    <div id="carousel" class="overflow-hidden rounded-lg shadow-lg">
+                        <img id="carousel-image" src="./img/sitio1.jpeg" alt="Foto do sítio"
+                            class="w-full h-72 object-cover transition-all duration-500" />
+                    </div>
+                    <div class="absolute inset-0 flex justify-between items-center px-4">
+                        <button onclick="prevImage()" class="bg-black/50 text-white px-2 py-1 rounded hover:bg-black">
+                            ‹
+                        </button>
+                        <button onclick="nextImage()" class="bg-black/50 text-white px-2 py-1 rounded hover:bg-black">
+                            ›
+                        </button>
+                    </div>
+                </div>
 
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <h3 class="text-2xl font-bold mb-3">
+                        Uma experiência que vai ficar pra sempre na memória!
+                    </h3>
+                    <p class="mb-2 text-gray-200">
+                        Troféus, medalhas, camisas personalizadas... e muito
+                        mais!
+                    </p>
+                    <p class="mb-2 text-gray-200">
+                        Nos dias <strong>20 e 21 de setembro</strong>, você
+                        vai viver um
+                        <strong>confinamento de 2 dias em um sítio</strong>,
+                        com:
+                    </p>
+                    <ul class="list-disc list-inside mb-4 text-gray-300">
+                        <li>Alimentação inclusa</li>
+                        <li>Treinos intensos</li>
+                        <li>Dinâmicas e brincadeiras em grupo</li>
+                        <li>Momentos de diversão e superação</li>
+                    </ul>
+                    <p class="font-semibold text-lg text-white">
+                        Uma verdadeira
+                        <span class="text-yellow-300">imersão transformadora</span>
+                        para encerrar esse desafio com chave de ouro!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Equipe (VOU TER QUE FAZER UM CARRUSEU NESSA MERDA) -->
-         <section id="team" class="py-16 px-6 bg-white">
-  <h2 class="text-4xl text-gray-700 font-bold text-left mb-2 max-w-4xl">
-    Faça como nossos mais de 150 alunos.
-  </h2>
-  <p class="text-xl text-gray-600 text-left mb-10 max-w-4xl">
-    E venha viver isso na prática,
-    <span class="text-2xl text-gray-700 font-semibold">#TropaDoCoach</span>
-  </p>
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Quem Sou
+                </h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Olá! Muito prazer, meu nome é
+                    <strong>Dyórdan Rafael </strong> Sou Educador físico e
+                    tenho como principal característica o prazer em ajudar
+                    pessoas a se sentirem bem tanto
+                    <strong>fisicamente</strong> quanto
+                    <strong>mentalmente.</strong><br />
+                    Trabalho com três metodologias principais na prescrição
+                    de treinos,
+                    <strong>que me ajudam a prevenir lesões, aliviar dores e
+                        potencializar os resultados</strong>
+                    de acordo com os objetivos de cada pessoa.<br />Meus
+                    principais nichos são
+                    <strong>o emagrecimento, a reabilitação e o treinamento de
+                        alto rendimento.</strong>
+                    Além disso, sou
+                    <strong>massoterapeuta e especialista em potência e
+                        pliometria.</strong><br />Tenho um enorme carinho pelo que faço e sigo
+                    constantemente investindo em conhecimento para oferecer
+                    a melhor experiência possível para você, meu cliente e
+                    aluno!
+                </p>
+            </div>
 
-  <div class="swiper teamSwiper max-w-7xl mx-auto px-4">
-    <div class="swiper-wrapper">
+            <div class="flex justify-center">
+                <img src="./img/01.jpeg" alt="Foto pessoal" class="rounded-2xl w-80 h-auto shadow-xl object-cover" />
+            </div>
+        </div>
+    </section>
 
-      <!-- Slides 1 a 13 -->
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/b.jpeg" alt="Equipe 2" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/c.jpeg" alt="Equipe 3" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/d.jpeg" alt="Equipe 4" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/e.jpeg" alt="Equipe 5" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/f.jpeg" alt="Equipe 6" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/g.jpeg" alt="Equipe 7" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/h.jpeg" alt="Equipe 8" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/i.jpeg" alt="Equipe 9" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/j.jpeg" alt="Equipe 10" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/k.jpeg" alt="Equipe 11" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/l.jpeg" alt="Equipe 12" class="w-full h-80 object-cover" />
-      </div>
-      <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="./img/m.jpeg" alt="Equipe 13" class="w-full h-80 object-cover" />
-      </div>
-    </div>
+    <section id="team" class="py-16 px-6 bg-white">
+        <h2 class="text-4xl text-gray-700 font-bold text-left mb-2 max-w-4xl">
+            Faça como nossos mais de 150 alunos.
+        </h2>
+        <p class="text-xl text-gray-600 text-left mb-10 max-w-4xl">
+            E venha viver isso na prática,
+            <span class="text-2xl text-gray-700 font-semibold">#TropaDoCoach</span>
+        </p>
 
-    <div class="swiper-button-prev !text-black absolute top-1/2 -left-6 z-10"></div>
-    <div class="swiper-button-next !text-black absolute top-1/2 -right-6 z-10"></div>
-  </div>
-</section>
+        <div class="swiper teamSwiper max-w-7xl mx-auto px-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/b.jpeg" alt="Equipe 2" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/c.jpeg" alt="Equipe 3" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/d.jpeg" alt="Equipe 4" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/e.jpeg" alt="Equipe 5" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/f.jpeg" alt="Equipe 6" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/g.jpeg" alt="Equipe 7" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/h.jpeg" alt="Equipe 8" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/i.jpeg" alt="Equipe 9" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/j.jpeg" alt="Equipe 10" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/k.jpeg" alt="Equipe 11" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/l.jpeg" alt="Equipe 12" class="w-full h-80 object-cover" />
+                </div>
+                <div class="swiper-slide w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./img/m.jpeg" alt="Equipe 13" class="w-full h-80 object-cover" />
+                </div>
+            </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <div class="swiper-button-prev !text-black absolute top-1/2 -left-6 z-10"></div>
+            <div class="swiper-button-next !text-black absolute top-1/2 -right-6 z-10"></div>
+        </div>
+    </section>
 
-<script>
-  const swiper = new Swiper(".teamSwiper", {
-    slidesPerView: 1.1,
-    spaceBetween: 20,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-      1280: {
-        slidesPerView: 4,
-      }
-    },
-    autoplay: {
-      delay: 1700,
-      disableOnInteraction: false,
-    }
-  });
-</script>
+    <section id="assinatura" class="relative text-white py-20 overflow-hidden bg-black">
+        <div class="absolute inset-0 bg-black/60 z-0"></div>
 
+        <div class="relative z-10 w-full flex flex-col md:flex-row items-center justify-center text-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    E então, para onde vamos agora, Coach?
+                </h2>
+                <p class="text-xl text-gray-400 mb-10">
+                    Você pode continuar se virando sozinha…<br />
+                    Ou pode escolher trilhar um caminho com clareza, apoio e
+                    direção.
+                </p>
 
+                <a href="https://loja.infinitepay.io/dyordan/gbk0378-setembro-magro---o-retorno" target="_blank"
+                    class="bg-emerald-400 hover:bg-emerald-500 text-black font-bold py-3 px-8 rounded-full transition inline-block">
+                    Comece sua Jornada com a mentoria do Coach Dyordan
+                    Rafael
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section id="assinatura" class="relative text-white py-20 overflow-hidden bg-black">
-  <!-- no escuro -->
-  <div class="absolute inset-0 bg-black/60 z-0"></div>
+    <footer class="text-center py-6 text-sm text-gray-400 bg-black border-t border-gray-700">
+        © 2025 RVCodelab. Todos os direitos reservados.
+    </footer>
 
-  <!-- Textão + Botãozão -->
-  <div class="relative z-10 w-full flex flex-col md:flex-row items-center justify-center text-center">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
-        E então, para onde vamos agora, Coach?
-      </h2>
-      <p class="text-xl text-gray-400 mb-10">
-        Você pode continuar se virando sozinha…<br>
-        Ou pode escolher trilhar um caminho com clareza, apoio e direção.
-      </p>
-
-      <a href="https://loja.infinitepay.io/dyordan/gbk0378-setembro-magro---o-retorno"
-         target="_blank"
-         class="bg-emerald-400 hover:bg-emerald-500 text-black font-bold py-3 px-8 rounded-full transition inline-block">
-        Comece sua Jornada com a mentoria do Coach Dyordan Rafael
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- Roda do pé -->
-<footer class="text-center py-6 text-sm text-gray-400 bg-black border-t border-gray-700">
-  © 2025 RVCodelab. Todos os direitos reservados.
-</footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
