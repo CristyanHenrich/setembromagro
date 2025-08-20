@@ -7,15 +7,6 @@ function scrollCarousel(direction) {
     });
 }
 
-const images = [
-    "./img/sitio4.jpeg",
-    "./img/sitio3.jpeg",
-    "./img/sitio5.jpeg",
-    "./img/sitio2.jpeg",
-    "./img/sitio1.jpeg",
-];
-
-let current = 0;
 
 function showImage(index) {
     const img = document.getElementById("carousel-image");
